@@ -11,6 +11,8 @@ public class QAPExampleTest {
 
         Assertions.assertTrue(qapExample.findSequenceInWord("find", "is_find_in_this_char_sequence?"));
 
+        Assertions.assertTrue(qapExample.findSequenceInWord("_char_", "is_find_in_this_char_sequence?"));
+
         Assertions.assertFalse(qapExample.findSequenceInWord("find_me", "is_find_in_this_char_sequence?"));
     }
 
